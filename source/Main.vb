@@ -48,7 +48,7 @@
         seed &= seed.Length.ToString("x16") & "_{NO_MORE_THAN_ILLUSION}"
 
         Dim generator As New PasswordGenerator(seed)
-        PassLbl.Text = "PBC-" & generator.GeneratePassword(15, True)
+        PassLbl.Text = "PBC-" & generator.GeneratePassword(17, True)
         PassLbl.ForeColor = Color.FromArgb(255, 190, 190)
     End Sub
 

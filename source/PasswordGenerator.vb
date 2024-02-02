@@ -22,7 +22,7 @@ Public Class PasswordGenerator
         Dim chars As String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
         If includeSymbols Then
-            chars &= "!@#$%^&*()"
+            chars &= "!@#$%^&*()<>.,=;:{}[]_"
         End If
 
         For i As Integer = 0 To length - 1
