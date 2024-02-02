@@ -303,7 +303,7 @@ Partial Class Main
         Me.AnySecret.MaxLength = 100
         Me.AnySecret.Name = "AnySecret"
         Me.AnySecret.Size = New System.Drawing.Size(273, 23)
-        Me.AnySecret.TabIndex = 0
+        Me.AnySecret.TabIndex = 4
         '
         'Login
         '
@@ -317,7 +317,7 @@ Partial Class Main
         Me.Login.Location = New System.Drawing.Point(13, 153)
         Me.Login.Name = "Login"
         Me.Login.Size = New System.Drawing.Size(273, 23)
-        Me.Login.TabIndex = 0
+        Me.Login.TabIndex = 3
         '
         'captureProtection
         '
@@ -346,7 +346,7 @@ Partial Class Main
         Me.NickName.Location = New System.Drawing.Point(153, 82)
         Me.NickName.Name = "NickName"
         Me.NickName.Size = New System.Drawing.Size(133, 23)
-        Me.NickName.TabIndex = 0
+        Me.NickName.TabIndex = 2
         '
         'ServiceName
         '
@@ -359,7 +359,7 @@ Partial Class Main
         Me.ServiceName.Location = New System.Drawing.Point(13, 82)
         Me.ServiceName.Name = "ServiceName"
         Me.ServiceName.Size = New System.Drawing.Size(133, 23)
-        Me.ServiceName.TabIndex = 0
+        Me.ServiceName.TabIndex = 1
         '
         'Generate
         '

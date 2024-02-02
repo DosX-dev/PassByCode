@@ -17,6 +17,8 @@
         Me.Location = New Point(x, y)
 
         Me.MinimumSize = Me.Size
+
+        Generate.Focus()
     End Sub
 
     Private Sub captureProtection_CheckedChanged(sender As Object, e As EventArgs) Handles captureProtection.CheckedChanged
