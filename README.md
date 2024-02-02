@@ -2,7 +2,7 @@
 
 PassByCode is a standalone password generator with a graphical interface for Windows, utilizing cryptographic methods for password generation. 
 
-![gui.jpg]()
+![](gui.jpg)
 
 ## 🚀 Features
 - **Hash-Based Generation:** PassByCode takes the input data and creates a hash using MD5 as a seed, ensuring a secure password generation process.
