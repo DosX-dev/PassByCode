@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="DoNotCaptureMe.vb" />
+    <Compile Include="ExtraBlackUI.Helper.vb" />
     <Compile Include="ExtraBlackUI.vb">
       <SubType>Component</SubType>
     </Compile>

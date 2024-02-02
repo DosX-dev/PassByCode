@@ -1,12 +1,14 @@
 ﻿Public Class Main
     Private noScreen As New DoNotCaptureMe
 
-    Private Declare Function DwmSetWindowAttribute Lib "dwmapi.dll" (hwnd As IntPtr, dwAttribute As UInteger, pvAttribute As Integer(), cbAttribute As UInteger) As Integer
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If DwmSetWindowAttribute(MyBase.Handle, 19UI, New Integer() {1}, 4UI) <> 0 Then
-            DwmSetWindowAttribute(MyBase.Handle, 20UI, New Integer() {True}, 4UI)
-        End If
+        ServiceName.SetCueBanner("example.com")
+        NickName.SetCueBanner("coolguy")
+        Login.SetCueBanner("account@gmail.com")
+        AnySecret.SetCueBanner("for example: my favorite dish is ...")
+
+        Me.EnableDarkMode()
 
         ' center screen
         Dim bounds = Screen.PrimaryScreen.Bounds
@@ -53,7 +55,11 @@
     End Sub
 
     Private Sub CopyResult_Click(sender As Object, e As EventArgs) Handles CopyResult.Click
-        Clipboard.SetText(PassLbl.Text)
+        Try
+            Clipboard.SetText(PassLbl.Text)
+        Catch ex As Exception
+            MsgBox(ex.Message, &H10)
+        End Try
     End Sub
 
     Private Sub GHLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles GHLink.LinkClicked
@@ -64,21 +70,62 @@
         End Try
     End Sub
 
+    Dim cordPoint As New Point,
+        cordSize As New Size
     Private Sub Main_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
 
         ' block 1
-        ServiceName.Size = New Size((Me.Size.Width / 2) - 25, ServiceName.Size.Height)
-        SubTextServiceNameLbl.Size = New Size(ServiceName.Size.Width, SubTextServiceNameLbl.Size.Height)
-        RedPointServiceName.Location = New Point(ServiceName.Size.Width - (RedPointServiceName.Size.Width / 2), RedPointServiceName.Location.Y)
+        cordSize.Width = (Me.Size.Width / 2) - 25
+        cordSize.Height = ServiceName.Size.Height
+        ServiceName.Size = cordSize
+
+        cordSize.Width = ServiceName.Size.Width
+        cordSize.Height = SubTextServiceNameLbl.Size.Height
+        SubTextServiceNameLbl.Size = cordSize
+
+        cordPoint.X = ServiceName.Size.Width - (RedPointServiceName.Size.Width / 2)
+        cordPoint.Y = RedPointServiceName.Location.Y
+        RedPointServiceName.Location = cordPoint
 
         ' block 2
         Dim paddingSize = (Me.Size.Width / 2) - 19
-        NickName.Size = New Size(paddingSize, NickName.Size.Height)
-        NickName.Left = paddingSize + 10
-        NicknameLbl.Location = New Point(NickName.Location.X, NicknameLbl.Location.Y)
 
-        SubTextNickNameLbl.Location = New Point(NickName.Location.X, SubTextNickNameLbl.Location.Y)
-        SubTextNickNameLbl.Size = New Size(NickName.Size.Width, SubTextNickNameLbl.Size.Height)
+        cordSize.Width = paddingSize
+        cordSize.Height = NickName.Size.Height
+
+        NickName.Size = cordSize
+        NickName.Left = paddingSize + 10
+
+        cordPoint.X = NickName.Location.X
+        cordPoint.Y = NicknameLbl.Location.Y
+
+        NicknameLbl.Location = cordPoint
+
+        cordPoint.X = NickName.Location.X
+        cordPoint.Y = SubTextNickNameLbl.Location.Y
+
+        SubTextNickNameLbl.Location = cordPoint
+
+        cordSize.Width = NickName.Size.Width
+        cordSize.Height = SubTextNickNameLbl.Size.Height
+
+        SubTextNickNameLbl.Size = cordSize
+
+        ' block 3 (result)
+        Dim resultBlockY = ((Me.ClientSize.Height / 12) * 2) + 283
+
+        cordPoint.X = ResultLbl.Location.X
+        cordPoint.Y = resultBlockY - 27
+        ResultLbl.Location = cordPoint
+
+        cordPoint.Y = resultBlockY
+
+        cordPoint.X = PassLbl.Location.X
+        PassLbl.Location = cordPoint
+
+        cordPoint.X = CopyResult.Location.X
+        CopyResult.Location = cordPoint
+
     End Sub
 
     Private Sub ShowMessage_Click(sender As Object, e As EventArgs) Handles ShowMessage.Click

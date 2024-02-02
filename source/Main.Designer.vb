@@ -36,7 +36,7 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.RedPointLogin = New System.Windows.Forms.Label()
         Me.RedPointAnySecret = New System.Windows.Forms.Label()
-        Me.warningLbl = New System.Windows.Forms.Label()
+        Me.WarningLbl = New System.Windows.Forms.Label()
         Me.GHLbl = New System.Windows.Forms.Label()
         Me.GHLink = New System.Windows.Forms.LinkLabel()
         Me.NicknameLbl = New System.Windows.Forms.Label()
@@ -193,17 +193,17 @@ Partial Class Main
         Me.RedPointAnySecret.TabIndex = 0
         Me.RedPointAnySecret.Text = "*"
         '
-        'warningLbl
+        'WarningLbl
         '
-        Me.warningLbl.BackColor = System.Drawing.Color.Maroon
-        Me.warningLbl.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.warningLbl.ForeColor = System.Drawing.Color.White
-        Me.warningLbl.Location = New System.Drawing.Point(0, 422)
-        Me.warningLbl.Name = "warningLbl"
-        Me.warningLbl.Size = New System.Drawing.Size(298, 29)
-        Me.warningLbl.TabIndex = 0
-        Me.warningLbl.Text = "Remember the entered data!"
-        Me.warningLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.WarningLbl.BackColor = System.Drawing.Color.Maroon
+        Me.WarningLbl.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.WarningLbl.ForeColor = System.Drawing.Color.White
+        Me.WarningLbl.Location = New System.Drawing.Point(0, 422)
+        Me.WarningLbl.Name = "WarningLbl"
+        Me.WarningLbl.Size = New System.Drawing.Size(298, 29)
+        Me.WarningLbl.TabIndex = 0
+        Me.WarningLbl.Text = "Remember the entered data!"
+        Me.WarningLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GHLbl
         '
@@ -301,7 +301,6 @@ Partial Class Main
         Me.AnySecret.ForeColor = System.Drawing.Color.White
         Me.AnySecret.Location = New System.Drawing.Point(13, 221)
         Me.AnySecret.MaxLength = 100
-        Me.AnySecret.Multiline = True
         Me.AnySecret.Name = "AnySecret"
         Me.AnySecret.Size = New System.Drawing.Size(273, 23)
         Me.AnySecret.TabIndex = 0
@@ -316,7 +315,6 @@ Partial Class Main
         Me.Login.Font = New System.Drawing.Font("Consolas", 9.75!)
         Me.Login.ForeColor = System.Drawing.Color.White
         Me.Login.Location = New System.Drawing.Point(13, 153)
-        Me.Login.Multiline = True
         Me.Login.Name = "Login"
         Me.Login.Size = New System.Drawing.Size(273, 23)
         Me.Login.TabIndex = 0
@@ -346,7 +344,6 @@ Partial Class Main
         Me.NickName.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.NickName.ForeColor = System.Drawing.Color.White
         Me.NickName.Location = New System.Drawing.Point(153, 82)
-        Me.NickName.Multiline = True
         Me.NickName.Name = "NickName"
         Me.NickName.Size = New System.Drawing.Size(133, 23)
         Me.NickName.TabIndex = 0
@@ -360,7 +357,6 @@ Partial Class Main
         Me.ServiceName.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.ServiceName.ForeColor = System.Drawing.Color.White
         Me.ServiceName.Location = New System.Drawing.Point(13, 82)
-        Me.ServiceName.Multiline = True
         Me.ServiceName.Name = "ServiceName"
         Me.ServiceName.Size = New System.Drawing.Size(133, 23)
         Me.ServiceName.TabIndex = 0
@@ -393,7 +389,7 @@ Partial Class Main
         Me.Controls.Add(Me.ShowMessage)
         Me.Controls.Add(Me.GHLink)
         Me.Controls.Add(Me.GHLbl)
-        Me.Controls.Add(Me.warningLbl)
+        Me.Controls.Add(Me.WarningLbl)
         Me.Controls.Add(Me.RedPointAnySecret)
         Me.Controls.Add(Me.RedPointLogin)
         Me.Controls.Add(Me.SubTextAnySecretLbl)
@@ -446,7 +442,7 @@ Partial Class Main
     Friend WithEvents Label3 As Label
     Friend WithEvents RedPointLogin As Label
     Friend WithEvents RedPointAnySecret As Label
-    Friend WithEvents warningLbl As Label
+    Friend WithEvents WarningLbl As Label
     Friend WithEvents GHLbl As Label
     Friend WithEvents GHLink As LinkLabel
     Friend WithEvents NickName As ExtraBlack.ExtraBlackTextbox
