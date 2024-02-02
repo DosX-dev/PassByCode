@@ -17,7 +17,10 @@ PassByCode requires the following information for password generation:
 The program offers basic, but highly effective protection against window capturing. With the built-in feature "Window capture protection," it is impossible to screenshot or record the program's window on video.
 
 ## ⚙️ Usage
-
 1. Enter the required information.
 2. Click on the generate button.
 3. Your unique password will be ready for use.
+
+## 🔴 ATTENTION
+Remember every character you enter. Any letter or number affects the final password.
+Also, **do not provide the data you enter to anyone**.
