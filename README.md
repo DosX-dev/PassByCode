@@ -39,3 +39,7 @@ Litecoin:
 ```LTC
 LUCKY777ju5Ea2VmenRuvk75kRUzTfwrHw
 ```
+
+## ❤️✨ Special thanks
+ * 👨🏼‍💻 **[@horsicq](https://github.com/horsicq)**
+
