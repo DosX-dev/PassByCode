@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Проверьте значения атрибутов сборки
 
-<Assembly: AssemblyTitle("PasMgr-SafeGenery")>
+<Assembly: AssemblyTitle("PassByCode")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("PasMgr-SafeGenery")>
-<Assembly: AssemblyCopyright("Copyright ©  2024")>
+<Assembly: AssemblyProduct("PassByCode")>
+<Assembly: AssemblyCopyright("© DosX")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

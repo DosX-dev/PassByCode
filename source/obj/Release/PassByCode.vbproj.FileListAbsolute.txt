@@ -1,9 +1,0 @@
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\bin\Release\PassByCode.exe.config
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\bin\Release\PassByCode.exe
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.vbproj.AssemblyReference.cache
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.Icons.resources
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.Main.resources
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.Resources.resources
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.vbproj.GenerateResource.cache
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.vbproj.CoreCompileInputs.cache
-C:\Users\kayko\source\repos\PasMgr-SafeGenery\obj\Release\PassByCode.exe
