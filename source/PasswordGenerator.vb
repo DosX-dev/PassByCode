@@ -13,8 +13,8 @@ Public Class PasswordGenerator
 
     Private Function GetNextRandomByte() As Byte
         Dim hash As Byte() = _md5.ComputeHash(Encoding.UTF8.GetBytes(_seed))
-        _seed = Convert.ToBase64String(hash) ' Обновляем сид на основе предыдущего хеша
-        Return hash(0) >> hash(6)
+        _seed = Convert.ToBase64String(hash) ' Updating the seed based on the previous hash
+        Return hash(0)
     End Function
 
     Public Function GeneratePassword(length As Integer, includeSymbols As Boolean) As String
