@@ -26,7 +26,7 @@ The program offers basic, but highly effective protection against window capturi
 2. Click on the generate button.
 3. Your unique password will be ready for use.
 
-## 🔴 ATTENTION
+## 🔴 Attension
 Remember every character you enter. Any letter or number affects the final password.
 Also, **do not provide the data you enter to anyone**.
 
