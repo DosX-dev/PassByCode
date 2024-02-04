@@ -50,7 +50,6 @@
 
         ' salt
         seed &= seed.Length.ToString("x16") & "_{NO_MORE_THAN_ILLUSION}"
-
         Dim generator As New PasswordGenerator(seed)
         PassLbl.Text = "PBC-" & generator.GeneratePassword(17, True)
         PassLbl.ForeColor = Color.FromArgb(255, 190, 190)
@@ -75,58 +74,59 @@
     Dim cordPoint As New Point,
         cordSize As New Size
     Private Sub Main_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        If Not Me.WindowState = FormWindowState.Minimized Then
+            ' block 1
+            cordSize.Width = (Me.Size.Width / 2) - 25
+            cordSize.Height = ServiceName.Size.Height
+            ServiceName.Size = cordSize
 
-        ' block 1
-        cordSize.Width = (Me.Size.Width / 2) - 25
-        cordSize.Height = ServiceName.Size.Height
-        ServiceName.Size = cordSize
+            cordSize.Width = ServiceName.Size.Width
+            cordSize.Height = SubTextServiceNameLbl.Size.Height
+            SubTextServiceNameLbl.Size = cordSize
 
-        cordSize.Width = ServiceName.Size.Width
-        cordSize.Height = SubTextServiceNameLbl.Size.Height
-        SubTextServiceNameLbl.Size = cordSize
+            cordPoint.X = ServiceName.Size.Width - (RedPointServiceName.Size.Width / 2)
+            cordPoint.Y = RedPointServiceName.Location.Y
+            RedPointServiceName.Location = cordPoint
 
-        cordPoint.X = ServiceName.Size.Width - (RedPointServiceName.Size.Width / 2)
-        cordPoint.Y = RedPointServiceName.Location.Y
-        RedPointServiceName.Location = cordPoint
+            ' block 2
+            Dim paddingSize = (Me.Size.Width / 2) - 19
 
-        ' block 2
-        Dim paddingSize = (Me.Size.Width / 2) - 19
+            cordSize.Width = paddingSize
+            cordSize.Height = NickName.Size.Height
 
-        cordSize.Width = paddingSize
-        cordSize.Height = NickName.Size.Height
+            NickName.Size = cordSize
+            NickName.Left = paddingSize + 10
 
-        NickName.Size = cordSize
-        NickName.Left = paddingSize + 10
+            cordPoint.X = NickName.Location.X
+            cordPoint.Y = NicknameLbl.Location.Y
 
-        cordPoint.X = NickName.Location.X
-        cordPoint.Y = NicknameLbl.Location.Y
+            NicknameLbl.Location = cordPoint
 
-        NicknameLbl.Location = cordPoint
+            cordPoint.X = NickName.Location.X
+            cordPoint.Y = SubTextNickNameLbl.Location.Y
 
-        cordPoint.X = NickName.Location.X
-        cordPoint.Y = SubTextNickNameLbl.Location.Y
+            SubTextNickNameLbl.Location = cordPoint
 
-        SubTextNickNameLbl.Location = cordPoint
+            cordSize.Width = NickName.Size.Width
+            cordSize.Height = SubTextNickNameLbl.Size.Height
 
-        cordSize.Width = NickName.Size.Width
-        cordSize.Height = SubTextNickNameLbl.Size.Height
+            SubTextNickNameLbl.Size = cordSize
 
-        SubTextNickNameLbl.Size = cordSize
+            ' block 3 (result)
+            Dim resultBlockY = ((Me.ClientSize.Height / 12) * 2) + 283
 
-        ' block 3 (result)
-        Dim resultBlockY = ((Me.ClientSize.Height / 12) * 2) + 283
+            cordPoint.X = ResultLbl.Location.X
+            cordPoint.Y = resultBlockY - 27
+            ResultLbl.Location = cordPoint
 
-        cordPoint.X = ResultLbl.Location.X
-        cordPoint.Y = resultBlockY - 27
-        ResultLbl.Location = cordPoint
+            cordPoint.Y = resultBlockY
 
-        cordPoint.Y = resultBlockY
+            cordPoint.X = PassLbl.Location.X
+            PassLbl.Location = cordPoint
 
-        cordPoint.X = PassLbl.Location.X
-        PassLbl.Location = cordPoint
-
-        cordPoint.X = CopyResult.Location.X
-        CopyResult.Location = cordPoint
+            cordPoint.X = CopyResult.Location.X
+            CopyResult.Location = cordPoint
+        End If
 
     End Sub
 
