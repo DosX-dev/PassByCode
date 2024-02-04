@@ -376,7 +376,7 @@ Partial Class Main
         Me.Generate.Margin = New System.Windows.Forms.Padding(4)
         Me.Generate.Name = "Generate"
         Me.Generate.Size = New System.Drawing.Size(273, 40)
-        Me.Generate.TabIndex = 0
+        Me.Generate.TabIndex = 5
         Me.Generate.Text = "Generate password"
         Me.Generate.UseVisualStyleBackColor = False
         '
