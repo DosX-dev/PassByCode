@@ -103,6 +103,7 @@ Partial Class Main
         Me.PassLbl.TabIndex = 0
         Me.PassLbl.Text = ". . ."
         Me.PassLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.PassLbl.UseMnemonic = False
         '
         'SubTextServiceNameLbl
         '
