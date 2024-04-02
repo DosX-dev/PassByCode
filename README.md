@@ -27,8 +27,8 @@ The program offers basic, but highly effective protection against window capturi
 3. Your unique password will be ready for use.
 
 ## 🖥 Supported OS
-| Windows OS (Versions) | Supported | Tested |
-|-----------------------|-----------|--------|
+| Windows NT version    | Supported  | Tested |
+|-----------------------|------------|--------|
 | Windows 11            | ✅         | ✅      |
 | Windows 10            | ✅         | ✅      |
 | Windows 8.1           | ✅         | ❌      |
