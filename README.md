@@ -26,11 +26,21 @@ The program offers basic, but highly effective protection against window capturi
 2. Click on the generate button.
 3. Your unique password will be ready for use.
 
+## 🖥 Supported OS
+| Windows OS (Versions) | Supported | Tested |
+|-----------------------|-----------|--------|
+| Windows 11            | ✅         | ✅      |
+| Windows 10            | ✅         | ✅      |
+| Windows 8.1           | ✅         | ❌      |
+| Windows 8             | ✅         | ❌      |
+| Windows 7             | ✅         | ✅      |
+
+
 ## 🔴 Attension
 Remember every character you enter. Any letter or number affects the final password.
 Also, **do not provide the data you enter to anyone**.
 
-## Donation 🤝
+## 🤝 Donation
 Bitcoin:
 ```BTC
 1DosXdevPgbaRKJkAJpvf2Jmjip8zC57he
