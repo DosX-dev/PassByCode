@@ -36,7 +36,7 @@ The program offers basic, but highly effective protection against window capturi
 | Windows 7             | ✅         | ✅      |
 
 
-## 🔴 Attension
+## 🔴 Attention
 Remember every character you enter. Any letter or number affects the final password.
 Also, **do not provide the data you enter to anyone**.
 
