@@ -32,7 +32,7 @@ The program offers basic, but highly effective protection against window capturi
 | Windows 11            | ✅         | ✅      |
 | Windows 10            | ✅         | ✅      |
 | Windows 8.1           | ✅         | ✅      |
-| Windows 8             | ✅         | ❌      |
+| Windows 8             | ✅         | ✅      |
 | Windows 7             | ✅         | ✅      |
 
 
